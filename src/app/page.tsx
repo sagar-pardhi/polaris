@@ -9,7 +9,7 @@ export default function Home() {
   const createProject = useMutation(api.projects.create);
 
   return (
-    <main className="flex felx-col gap-2 p-4">
+    <main className="flex flex-col gap-2 p-4">
       <Button
         onClick={() => {
           createProject({ name: "New Project" });
