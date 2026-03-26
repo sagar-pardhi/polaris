@@ -59,7 +59,12 @@ export const ProjectsView = () => {
                 alt="polaris"
                 className="size-[32px] md:size-[46px]"
               />
-              <h1 className={cn("text-4xl md:text-5xl font-semibold")}>
+              <h1
+                className={cn(
+                  "text-4xl md:text-5xl font-semibold",
+                  font.className,
+                )}
+              >
                 Polaris
               </h1>
             </div>
