@@ -6,6 +6,9 @@ import { useEffect, useMemo, useRef } from "react";
 import { customSetup } from "../extensions/custom-setup";
 import { getLanguageExtension } from "../extensions/language-extension";
 import { minimap } from "../extensions/minimap";
+import { quickEdit } from "../extensions/quick-edit";
+import { selectionTooltip } from "../extensions/selection-tooltip";
+import { suggestions } from "../extensions/suggestions";
 import { customTheme } from "../extensions/theme";
 
 interface Props {
@@ -31,6 +34,9 @@ export const CodeEditor = ({ filename, initalValue = "", onChange }: Props) => {
         oneDark,
         customTheme,
         customSetup,
+        suggestions(filename),
+        quickEdit(filename),
+        selectionTooltip(),
         languageExtension,
         keymap.of([indentWithTab]),
         minimap(),
