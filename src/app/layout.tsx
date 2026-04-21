@@ -3,7 +3,10 @@ import { Providers } from "@/components/providers";
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, Inter } from "next/font/google";
 import { Toaster } from "sonner";
+//@ts-expect-error - no types for this package
 import "./globals.css";
+//@ts-expect-error - no types for this package
+import "allotment/dist/style.css";
 
 const inter = Inter({
   variable: "--font-inter",
