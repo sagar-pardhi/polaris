@@ -46,7 +46,7 @@ const createQuickEditTooltip = (state: EditorState): readonly Tooltip[] => {
       create() {
         const dom = document.createElement("div");
         dom.className =
-          "bg-popover text-popover-foreground z/50 rounded-sm border border-input p-2 shadow-md flex felx-col gap-2 text-sm";
+          "bg-popover text-popover-foreground z/50 rounded-sm border border-input p-2 shadow-md flex flex-col gap-2 text-sm";
 
         const form = document.createElement("form");
         form.className = "flex flex-col gap-2";
